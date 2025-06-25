@@ -1,3 +1,1 @@
-# Projects
-Various projects
-Check out branches to see different projects
+MySQL and PHP group project; Pharmacy staff control panel; updates database
