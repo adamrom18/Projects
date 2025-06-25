@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Name: Adam Romanowicz, Robert Kavanagh, Chris Evans, Alise Aleksane, Anthony Hope
+    UserId: C00297492, C00282028, C00296656, C00071997, C00295851
+    Date: 27/01/2025
+    Name: Pharmacy_Main
+    Description: Pharmacy Main Menu-->
+<title>Riverbridge Pharmacy</title>
+<link rel="stylesheet" href="Pharmacy_Main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!--Navigation Bar-->
+<body>
+<div class="Content">
+
+<div id="navbar">
+    <a class="active" href="Pharmacy_Main.html">Home</a>
+    <a href="#counter">Counter Sales</a>
+
+    <a href="#counter">Dispense Drugs</a>
+
+    <div class="dropdown">
+      <button class="dropbtn">Stock Control
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Reorder Drugs</a>
+        <a href="#">Reorder Other Stock</a>
+        <a href="#">Receive Drug Deliveries</a>
+        <a href="#">Receive Other Deliveries</a>
+      </div>
+    </div> 
+
+    <div class="dropdown">
+      <button class="dropbtn">Supplier Accounts
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">New Invoices from Suppliers</a>
+        <a href="#">Payment to Suppliers</a>
+      </div>
+    </div> 
+
+    <div class="dropdown">
+      <button class="dropbtn">File Maintenance
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="Person A (Adam)/Add_Customer/Add_Customer.html.php">Add a New Customer</a>
+        <a href="Person A (Adam)/Delete_Customer/Delete_Customer.html.php">Delete a Customer</a>
+        <a href="Person A (Adam)/Amend_View_Customer/Amend_View_Customer.html.php">Amend / View a Customer</a>
+        <a href="#">Add a New Doctor</a>
+        <a href="#">Delete a Doctor</a>
+        <a href="#">Amend / View a Doctor</a>
+        <a href="#">Add a New Drug</a>
+        <a href="#">Delete a Drug</a>
+        <a href="#">Amend / View a Drug</a>
+        <a href="Person C (Chris)/Add Record/insert.html.php">Add a Supplier</a>
+        <a href="Person C (Chris)/Delete Records/delete.html.php">Delete a Supplier</a>
+        <a href="Person C (Chris)/Amend Record/amendview.html.php">Amend / View a Supplier</a>
+        <a href="#">Add a New Stock Item</a>
+        <a href="#">Delete a Stock Item</a>
+        <a href="#">Amend / View a Stock Item</a>
+      </div>
+    </div> 
+
+    <div class="dropdown">
+      <button class="dropbtn">Reports
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Drugs Report</a>
+        <a href="#">Prescriptions Report</a>
+        <a href="#">Orders Report</a>
+        <a href="#">Customer/Prescription Report</a>
+      </div>
+    </div> 
+
+    <a class="exit" href="#about">Exit</a>
+  </div>
+
+ <!--Top Details-->
+ <div class="top"> <!--Top background-->
+    <b><div class="userID"><i class="fa fa-address-card-o" style="position:relative; right: 105px;"></i>UserID</div><br></b>
+    <div class="userIDisplay"><i class="fa fa-address-card-o" style="position:relative; right: 90px;"></i>SE6004378</div><br>
+    <b><div class="job"><i class="fa fa-user-md" style="position:relative; right: 62px;"></i>Job Description</div></b>
+    <div class="jobDisplay"><i class="fa fa-user-md" style="position:relative; right: 85px;"></i>Pharmacist</div><br>
+    <div class="profile"><IMG SRC="Templates/Images/doc1.PNG" height="300" width="300" vspace="10"></div>
+    <div class="name">Paul Van Hoorn</div>
+    <div class="log" id="log"><a href="#"><div class="logout" id="logout">Logout</div></a></div>
+    <img src="Templates/Images/logo.jpeg" height="400" width="800" style="float: right; margin-top: -150px;margin-right: 360px;">
+ </div>
+
+ <!--Bottom Options-->
+ <div class="bottom"> <!--Bottom background-->
+    <div class="Counter_Sales"><IMG SRC="Templates/Images/counter sales items.jpg" height="150" width="150" vspace="10"></div>
+    <div class="Dispense_Drugs"><IMG SRC="Templates/Images/pill.jpg" height="150" width="150" vspace="10"></div>
+    <div class="Stock"><IMG SRC="Templates/Images/stock.jpg" height="150" width="150" vspace="10"></div>
+    <div class="Supplier"><IMG SRC="Templates/Images/supplier.jpg" height="150" width="150" vspace="10"></div>
+    <div class="File"><IMG SRC="Templates/Images/file.jpg" height="150" width="150" vspace="10"></div>
+    <div class="Report"><IMG SRC="Templates/Images/report.jpg" height="150" width="150" vspace="10"></div>
+ </div>
+
+ <div class="footer"> <!--Details at very bottom of page-->
+  <a style="position: relative; left:70px;" id="demo"></a>
+  <a style="position: relative; left:450px;">Location: The Bridge, Co.Carlow</a>
+  <a style="position: relative; left:800px;">RiverBridge Pharmacy</a>
+</footer> 
+
+<script> //Script to get date and time
+    const d = new Date();
+    document.getElementById("demo").innerHTML = d;
+    </script>
+</div>
+ 
+
+ 
+</div>
+</body>
+
+</html>
